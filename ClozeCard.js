@@ -1,13 +1,11 @@
-module.exports = ClozeCard;
+exports.ClozeCard = ClozeCard;
 
-function ClozeCard(fulltext, cloze, partial) {
-  this.fulltext = fulltext;
+function ClozeCard(text, cloze) {
+  this.text = text;
   this.cloze = cloze;
-  this.partial = partial;
+  this.partial = text.replace(cloze, '...');
+  // this.makePartial = function() {
+  //   var partial = this.fulltext.replace(cloze, '...');
+  //   return partial;
+  // };
 }
-
-var ethiopiaCloze = new ClozeCard('Addis Ababa is the capital of Ethiopia', 'Addis Ababa', 'is the capital of Ethiopia');
-
-console.log(ethiopiaCloze.fulltext);
-console.log(ethiopiaCloze.cloze);
-console.log(ethiopiaCloze.partial);
