@@ -33,12 +33,12 @@ function newBasicCard() {
   inquirer.prompt([
     {
       type: 'input',
-      message: 'Card Front',
+      message: 'Card Front'.white,
       name: 'front'
     },
     {
       type: 'input',
-      message: 'Card Back',
+      message: 'Card Back'.white,
       name: 'back'
     }
   ]).then((answers) => {
@@ -61,12 +61,12 @@ function newClozeCard() {
   inquirer.prompt([
     {
       type: 'input',
-      message: 'Card Front',
+      message: 'Card Front'.white,
       name: 'front'
     },
     {
       type: 'input',
-      message: 'Card Back',
+      message: 'Card Back'.white,
       name: 'back'
     }
   ]).then((answers) => {

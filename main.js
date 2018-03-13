@@ -21,12 +21,12 @@ inquirer.prompt([
     inquirer.prompt([
       {
         type: 'input',
-        message: 'Card Front',
+        message: 'Card Front'.white,
         name: 'front'
       },
       {
         type: 'input',
-        message: 'Card Back',
+        message: 'Card Back'.white,
         name: 'back'
       }
     ]).then((answers) => {
@@ -80,6 +80,11 @@ inquirer.prompt([
       // ======== Basic Quiz ===================
         if (answers.Flashcards === 'Quiz Basic cards') {
           basic.quizBasic(0);
+        }
+
+      // ======== Cloze Quiz ===================
+        if (answers.Flashcards === 'Quiz Cloze cards') {
+          console.log('Coming Soon!'.magenta);
         }
 
       // ======== Clear Cards ==================

@@ -1,8 +1,0 @@
-
- Cloze: {
-   "text":"Monday is the first day of the week.",
-   "cloze":"Monday",
-   "partial":"... is the first day of the week."
- }
-
- Basic: {"front":"hello","back":"bye"}
